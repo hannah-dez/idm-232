@@ -1,0 +1,80 @@
+:root{
+    --dark-purple: #5F0F40;
+    --orange: #EB854F;
+    --light-purple: #A79AB2;
+    --page-color: #EDEADC;
+}
+@font-face {
+    font-family: headerFont;
+    src: url(../content/Kalnia-VariableFont_wdth\,wght.ttf);
+  }
+
+body{
+    background-color: var(--page-color);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding-top: 10px; 
+}
+
+h1 {
+    font-size: 7rem; 
+    text-align: left; 
+    margin: 0;
+    line-height: 1;
+     color: var(--orange);
+    font-family: headerFont;
+}
+
+.headimg { 
+    height: 45vh; 
+    width: 50vw;
+}
+
+header {
+    position: relative; 
+    top: 0; 
+    margin-top: 0; 
+    background-color: var(--dark-purple);
+}
+
+.menu{
+    background-color: var(--light-purple);
+    padding: 15px;
+}
+
+footer{
+    display: flex;
+    background-color: var(--light-purple);
+    height: 7vh;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.foodThumbnail {
+    max-width: 10vw;
+}
+
+.recipe {
+    display: flex;
+    align-items: center; 
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 35vw;
+}
+
+.recipe p {
+    margin: 20px;
+    flex: 1;
+}
+
+.topRecipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 20px; 
+    row-gap: 40px;
+    justify-items: center; 
+    margin: 20px 0;
+}
